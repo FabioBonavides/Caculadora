@@ -61,6 +61,9 @@ elif resposta == 'sim':
                 print(f'O resultado da divisão é {resultado}')
 
         numeroOP += 1
-        resposta2 = input('Deseja fazer uma nova operação: ')
-        if resposta2 == 'não':
+        resposta3 = input('Deseja fazer uma nova operação: ')
+        if resposta3 == 'não':
+            resposta2 = resposta3
             print(f'O resultado final é {resultado}')
+        elif resposta3 == 'sim':
+            print('Repetir operação!')
